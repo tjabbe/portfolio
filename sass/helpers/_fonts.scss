@@ -1,0 +1,66 @@
+/* FONTS */
+
+@include font-face($archive, 'Archive', 'Archive', '');
+@include font-face($aiLight, 'Aileron-Light', 'Aileron', '');
+@include font-face($aiUltraLight, 'Aileron-UltraLight', 'Aileron', '');
+@include font-face($aiHeavy, 'Aileron-Heavy', 'Aileron', '');
+@include font-face($aiBold, 'Aileron-Bold', 'Aileron', '');
+@include font-face($aiReg, 'Aileron-Regular', 'Aileron', '');
+@include font-face($aiBlack, 'Aileron-Black', 'Aileron', '');
+@include font-face('icons', 'icons', 'Icons', '');
+
+
+%font-smoothing {
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+
+.icon-arrow {
+    &:before {
+    	font-family: 'icons';
+        content: $icon-arrow;
+    }
+}
+.icon-download {
+    &:before {
+    	font-family: 'icons';
+    	font-size: 22px;
+        content: $icon-download;
+    }
+}
+.icon-github {
+    &:before {
+    	font-family: 'icons';
+    	font-size: 36px;
+        content: $icon-github;
+    }
+}
+.icon-place {
+    &:before {
+    	font-family: 'icons';
+    	font-size: 30px;
+        content: $icon-place;
+    }
+}
+.icon-see {
+    &:before {
+    	font-family: 'icons';
+        content: $icon-see;
+    }
+}
+.icon-twitter {
+    &:before {
+    	font-family: 'icons';
+    	font-size: 30px;
+        content: $icon-twitter;
+    }
+}

@@ -1,0 +1,92 @@
+.contact {
+	width:100%;
+	height:100%;
+
+	.content {
+		overflow:hidden;
+	}
+
+	.col {
+		position: relative;
+		float:left;
+		width:50%;
+		text-align: center;
+		padding:20px 0;
+		@extend .clearfix;
+
+		&:first-child {
+			&:before {
+				content:'';
+				position: absolute;
+				top:0;
+				right:0;
+				width:1px;
+				height:100%;
+				background-color:$grey;
+			}
+		}
+
+		h1 {
+			font-family: $aiUltraLight;
+			font-size: 40px;
+			color:$grey;
+			text-transform: uppercase;
+			margin-bottom: 50px;
+		}
+
+		p {
+			font-family: $aiBold;
+			font-size: 19px;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+		}
+
+		.mail {
+			text-decoration: none;
+			color:$grey;
+			font-family: $aiUltraLight;
+			font-size: 16px;
+			margin-bottom: 50px;
+			display: block;
+		}
+
+		.social {
+			> div {
+				font-family: $aiUltraLight;
+				font-size: 16px;
+				display: inline-block;
+
+				&:before {
+					color:$grey;
+					vertical-align: middle;
+					margin-right:30px;
+				}
+
+				&:first-child {
+					margin-right:100px;
+				}
+
+				a {
+					text-decoration: none;
+					color:inherit;
+					display: inline-block;
+				}
+			}
+		}
+
+		img {
+			margin-bottom: 20px;
+		}
+
+		.icon-place {
+			&:before {
+				color:#fff;
+				margin-right: 15px;
+				vertical-align: middle;
+			}
+			font-family: $aiUltraLight;
+			font-size: 16px;
+			color:$grey;
+		}
+	}
+}
